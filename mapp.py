@@ -13,7 +13,7 @@ def sample():
 # the data which the user inputs
 def prediction(indgred1, indgred2, indgred3, indgred4, indgred5, indgred6, indgred7, indgred8, indgred9, indgred10, indgred11, indgred12, indgred13):  
     indgred=[[indgred1, indgred2, indgred3, indgred4, indgred5, indgred6, indgred7, indgred8, indgred9, indgred10, indgred11, indgred12, indgred13]]
-    model = tf.keras.models.load_model("D:\Mithies\M_model.h5")
+    model = tf.keras.models.load_model("M_model.h5")
     result = model.predict(indgred)
     if result > 0.5:
         a = 'machine will failure'
